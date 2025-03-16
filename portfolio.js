@@ -1,5 +1,5 @@
-
 $(document).ready(function () {
+    // Smooth Scroll
     $("header ul li a").on("click", function (event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -12,24 +12,17 @@ $(document).ready(function () {
             );
         }
     });
+
+    // Project Clickable Box
+    $(".project-box").on("click", function () {
+        var link = $(this).attr("data-link");
+        if (link) {
+            window.open(link, "_blank");
+        }
+    });
+
+    // Mobile Navigation Toggle
+    $(".menu-toggle").on("click", function () {
+        $(".nav-links").slideToggle();
+    });
 });
-
-
-
-$(".project-box").on("click", function () {
-    var link = $(this).attr("data-link");
-    if (link) {
-        window.open(link, "_blank");
-    }
-});
-
-
-
-$(".project-box").hover(
-    function () {
-        $(this).css("transform", "scale(1.05)");
-    },
-    function () {
-        $(this).css("transform", "scale(1)");
-    }
-);

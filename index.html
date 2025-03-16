@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramseena S | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
-    <script src="portfolio.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
+    <script src="portfolio.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <h2>RAMSEENA S</h2>
+        <div class="menu-toggle">&#9776;</div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about" class="active">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -25,8 +24,10 @@
 
     <section id="about" class="section1">
         <h1>Aspiring Front-End Developer</h1>
+        <br>
         <p>An aspiring Front-End Developer with a basic understanding of web technologies,<br> currently seeking an internship or trainee role to enhance my front-end development skills and gain hands-on experience with modern frameworks.</p>
-        <button onclick="window.open('RamseenaS_CV.pdf')">Download CV</button>
+        <br>
+        <button onclick="window.open('Ramseena_S.pdf')">Download CV</button>
     </section>
 
     <section id="skills">
@@ -43,25 +44,24 @@
             <div class="project-box" data-link="https://ramseenas.github.io/astrokids/">
                 <h3>Orbit Sprouts 🚀</h3>
             </div>
-            <div class="project-box" data-link="https://your-second-project-link.com">
-                <h3>Project 2</h3>
+            <div class="project-box" data-link="https://ramseenas.github.io/To-Do-List/">
+                <h3>To Do List</h3>
             </div>
         </div>
-        
     </section>
 
     <section id="contact">
         <h2>Let's Connect!</h2>
         <p>Looking for collaboration or have an opportunity for me? Feel free to reach out!</p>
         <div class="contact-links">
-            <a href="mailto:ramseenas19@gmail.com" target="_blank" class="contact-icon">
-                <img src="gmail.png" alt="Gmail" width="24" height="24">  
+            <a href="mailto:ramseenas19@gmail.com" target="_blank">
+                <img src="gmail.png" alt="Gmail">  
             </a>
-            <a href="https://www.linkedin.com/in/ramseena-s-7b9a85125/" target="_blank" class="contact-icon">
-                <img src="linkedin.webp" alt="LinkedIn" width="24" height="24"> 
+            <a href="https://www.linkedin.com/in/ramseena-s-7b9a85125/" target="_blank">
+                <img src="linkedin.webp" alt="LinkedIn"> 
             </a>
-            <a href="https://github.com/RamseenaS" target="_blank" class="contact-icon">
-                <img src="GitHub_Invertocat_Logo.svg.png" alt="GitHub" width="24" height="24"> 
+            <a href="https://github.com/RamseenaS" target="_blank">
+                <img src="GitHub_Invertocat_Logo.svg.png" alt="GitHub"> 
             </a>
         </div>
     </section>
